@@ -1,0 +1,14 @@
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #bf0092;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
+}
+
+
+
+

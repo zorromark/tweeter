@@ -1,0 +1,30 @@
+
+
+form textarea {
+  background-color: #f4f1ec;
+  width: 100%;
+  border: none;
+  border-bottom: 6px solid #545149;
+  padding-top: 0.5em;
+
+
+}
+
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+
+form button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', sans-serif;
+}
+
+form output {
+  font-family: 'Bungee', sans-serif;
+}
+
+
