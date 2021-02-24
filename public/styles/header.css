@@ -1,6 +1,7 @@
-header {
+header.top-header {
   height: 400px;
   width: 100%;
+  font-weight: bold;
   background-color: #bf0092;
   display: flex;
   align-items: center;
@@ -9,6 +10,8 @@ header {
   background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
 }
 
-
+h2 {
+  font-weight: lighter
+}
 
 

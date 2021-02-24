@@ -27,11 +27,65 @@ body {
 
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+* Additional CSS can be defined below or in other CSS files, as per instructions
+*/
 
- main {
+.avatar {
+  height:3em;
+  margin-right: 1em;
+}
+
+.avatar-name {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.fa {
+  font-size:24px
+}
+
+.lighter-username {
+  visibility: hidden;
+  color:slategray
+}
+
+main {
   width: 90%;
   background-color: #f4f1ec;
+}
 
+.tweets {
+  padding: 1.5em;
+  margin-top: 3em;
+  border: 6px solid #545149;
+}
+
+.tweets article header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.tweets article footer {
+  border-top: 6px solid #545149;
+  padding-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tweet-firstname {
+  font-weight: lighter;
+}
+
+.tweets:hover  {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.tweets:hover .lighter-username {
+  visibility: visible;
 }

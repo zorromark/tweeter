@@ -4,8 +4,40 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav + header {
+  padding-top: 250px;
 }
 
 nav span {
   font-family: 'Bungee', sans-serif;
+  font-size: 50px;
+}
+
+nav div {
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+#togglearrow {
+  color: red;
+
+}
+
+.write {
+  display: flex;
+  flex-direction: column;
+}
+.arrow {
+  align-items: center;
+  justify-content: center;
 }
