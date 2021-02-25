@@ -1,6 +1,5 @@
 $(document).ready(function() {
-  console.log('does this work?');
-
+  
   const $ta = $('#tweet-text');
 
 

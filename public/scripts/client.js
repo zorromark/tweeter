@@ -28,13 +28,25 @@ $tweetButton.on('submit', function(event) {
   event.preventDefault();
 
   const serializedTweet = $(this).serialize();
+ 
+  $textarea = $('#tweet-text').val().trim();
+  $textLength = $textarea.length;
+
+  if ($textarea === "" || $textarea === null) {
+    alert("Please type in your tweet before tweeting.")
+
+  } else if ($textLength > 140) {
+    alert("Your over 140 characters, please shorten your tweet.")
+
+  } else {
 
   $.post('/tweets', serializedTweet)
     .then((response) => {
       console.log(response);
       loadtweets();
     })
-  })
+  }
+})
 
 
 
@@ -46,14 +58,21 @@ const renderTweets = function(tweets) {
 
   for (let id of tweets) {
     const tweet = id
-    $tweets.append(createTweetElement(tweet));
+    $tweets.prepend(createTweetElement(tweet));
   
   }
 }
 
+const escape = function(str) {
+  const div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
+
 
 const createTweetElement = function(tweet) {
-  let $tweet = $(`
+  const $tweet = $(`
   <article class="tweet">
     <header>
       <div class="user" class="avatar-name">
@@ -63,7 +82,7 @@ const createTweetElement = function(tweet) {
      <h3 class="lighter-username">${tweet.user.handle}</h3>
     </header> 
     <p>
-    ${tweet.content.text}
+    ${escape(tweet.content.text)}
     </p>
     <footer>
       <div>${tweet.created_at}</div>
