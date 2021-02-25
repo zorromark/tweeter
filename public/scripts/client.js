@@ -6,6 +6,8 @@
 
 $(() => {
 
+  const $alert1 = $('#alert1')
+  $alert1.hide()
 
 const loadtweets = () => {
   $.ajax({
@@ -20,9 +22,12 @@ const loadtweets = () => {
 })
 }
 
+
+
 loadtweets();
 
 const $tweetButton = $('.tweet-form');
+
 
 $tweetButton.on('submit', function(event) {
   event.preventDefault();
@@ -31,14 +36,23 @@ $tweetButton.on('submit', function(event) {
  
   $textarea = $('#tweet-text').val().trim();
   $textLength = $textarea.length;
+    
 
   if ($textarea === "" || $textarea === null) {
-    alert("Please type in your tweet before tweeting.")
+    
+    $alert1.text('Please do not leave it blank.')
+    $alert1.slideDown('slow')
+    
 
+    
   } else if ($textLength > 140) {
-    alert("Your over 140 characters, please shorten your tweet.")
+    $alert1.text('too long')
+    $alert1.slideDown('slow')
+   
+  
 
   } else {
+    $alert1.slideUp('slow')
 
   $.post('/tweets', serializedTweet)
     .then((response) => {
@@ -47,7 +61,6 @@ $tweetButton.on('submit', function(event) {
     })
   }
 })
-
 
 
 const renderTweets = function(tweets) {

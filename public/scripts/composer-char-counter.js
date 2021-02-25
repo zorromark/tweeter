@@ -9,7 +9,9 @@ $(document).ready(function() {
     const counterNewTweet = $(this).parent().find('.counter')
     counterNewTweet.text(remainingTweetRoom)
     if(remainingTweetRoom < 0) {
-      counterNewTweet.css('color', 'red')
+      counterNewTweet.addClass('red')
+    } else {
+      counterNewTweet.removeClass('red')
     }
   })
 
