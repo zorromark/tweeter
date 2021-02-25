@@ -35,7 +35,7 @@ body {
   margin-right: 1em;
 }
 
-.avatar-name {
+.user {
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -55,7 +55,8 @@ main {
   background-color: #f4f1ec;
 }
 
-.tweets {
+
+.tweets article {
   padding: 1.5em;
   margin-top: 3em;
   border: 6px solid #545149;
@@ -82,7 +83,7 @@ main {
   font-weight: lighter;
 }
 
-.tweets:hover  {
+.tweets article:hover  {
   box-shadow: 10px 10px 5px grey;
 }
 

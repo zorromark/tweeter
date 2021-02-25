@@ -58,7 +58,7 @@
   <main class="container">
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets/">
+      <form method="POST" action="/tweets/" class="tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
@@ -67,24 +67,8 @@
           </div>
         </form>
       </section>
-    <section class="tweets">
-      <article>
-        <header>
-          <div class="avatar-name">
-            <img class="avatar" src="/images/profile-hex.png"> 
-            <h3 class="tweet-firstname">FirstName </h3>
-          </div>
-          <h3 class="lighter-username">@username</h3>
-        </header> 
-        <p>
-          Tweeted something amazing!
-        </p>
-        <footer>
-          <div>10 days ago</div>
-          <div> &#x2691; &#x2665; <i class="fa">&#xf079;</i></div>
-        </footer>
-      </article>
-      </section>
+    <section class="tweets" id="tweets-container">
+    </section>
     </main>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
