@@ -27,14 +27,13 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
-    
+       
   </head>
   
   <body>
@@ -44,11 +43,11 @@
       <div class = "write"> 
         <div><b>Write</b> a new tweet </div>
         <div class = "arrow">
-           <a href="#gohere">  <i id="togglearrow" class="fas fa-arrow-down"></i>     </a> 
+           <a href="#writetweet"><i id="togglearrow" class="fas fa-arrow-down"></i></a> 
         </div>
       </div>
     </nav>
-        <header  class="top-header">
+    <header  class="top-header">
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
@@ -58,11 +57,11 @@
       </div>
     </header>
   <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <span class="anchor" id="gohere">     </span>
-      <div class="alert1" id="gohere"></div>
-      <form method="POST" action="/tweets/" class="tweet-form" >
+    <main class="container">
+      <section class="new-tweet">
+        <span class="anchor" id="writetweet">     </span>
+        <div class="alert1"></div>
+        <form method="POST" action="/tweets/" class="tweet-form" >
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
@@ -71,12 +70,12 @@
           </div>
         </form>
       </section>
-    <section class="tweets" id="tweets-container">
-    </section>
+      <section class="tweets" id="tweets-container">
+      </section>
     </main>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </body>
-  </html>
+</html>
   
   
   

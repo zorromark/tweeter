@@ -35,7 +35,6 @@ p {
   overflow-wrap: anywhere;
 }
 
-
 .avatar {
   height:3em;
   margin-right: 1em;
@@ -51,12 +50,10 @@ p {
   font-size:24px
 }
 
-
 main {
   width: 90%;
   background-color: #f4f1ec;
 }
-
 
 .tweets article {
   padding: 1.5em;
@@ -85,25 +82,9 @@ main {
   font-weight: lighter;
 }
 
-/* article.tweet:hover  {
-  box-shadow: 10px 10px 5px grey;
-} */
-
-
-/* .lighter-username {
-  visibility: hidden;
-  color:slategray
-}
-.tweet:hover .lighter-username {
-  visibility: visible;
-} */
-
-
-
 .lighter-username {
   visibility: hidden;
 }
-
 
 .tweets article:hover  {
   box-shadow: 10px 10px 5px grey;
@@ -114,6 +95,8 @@ main {
   color:slategray
 }
 
+
+/* Responsive design for screens larger than 1024px. */
 
 @media screen and (min-width: 1024px) {
 
@@ -132,7 +115,6 @@ main {
     margin-top: 90px;
     margin-right: 3rem;
   }
-
 
   .top-header {
     width: 33.3%;
