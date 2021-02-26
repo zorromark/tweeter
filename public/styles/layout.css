@@ -51,10 +51,6 @@ p {
   font-size:24px
 }
 
-.lighter-username {
-  visibility: hidden;
-  color:slategray
-}
 
 main {
   width: 90%;
@@ -89,19 +85,31 @@ main {
   font-weight: lighter;
 }
 
-/* .tweets article:hover  {
+/* article.tweet:hover  {
   box-shadow: 10px 10px 5px grey;
-}
+} */
 
-.tweets:hover .lighter-username {
+
+/* .lighter-username {
+  visibility: hidden;
+  color:slategray
+}
+.tweet:hover .lighter-username {
   visibility: visible;
 } */
 
-.hover {
+
+
+.lighter-username {
+  visibility: hidden;
+}
+
+
+.tweets article:hover  {
   box-shadow: 10px 10px 5px grey;
 }
 
-.lighter-username2 {
+.tweets article:hover .lighter-username {
   visibility: visible;
   color:slategray
 }
@@ -133,5 +141,5 @@ main {
     margin-left: 3rem;
     max-width: 1024px;
   }
-  
+
 }

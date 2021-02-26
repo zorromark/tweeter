@@ -44,29 +44,30 @@
       <div class = "write"> 
         <div><b>Write</b> a new tweet </div>
         <div class = "arrow">
-          <i id="togglearrow" class="fas fa-arrow-down"></i>
+           <a href="#gohere">  <i id="togglearrow" class="fas fa-arrow-down"></i>     </a> 
         </div>
       </div>
     </nav>
-    <header class="top-header">
+        <header  class="top-header">
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
       <br>
       <div>
-        <h2> <b>Your</b> Name</h2>
+        <h2> <b>Anita</b> Toth</h2>
       </div>
     </header>
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <div class="alert1"></div>
-      <form method="POST" action="/tweets/" class="tweet-form">
+      <span class="anchor" id="gohere">     </span>
+      <div class="alert1" id="gohere"></div>
+      <form method="POST" action="/tweets/" class="tweet-form" >
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
-            <button type="submit" class = "form-bungee">Tweet</button>
-            <output name="counter" class="counter" class = "form-bungee" for="tweet-text">140</output> 
+            <button type="submit" class = "form-bungee" id="test">Tweet</button>
+            <output name="counter" class="counter form-bungee" for="tweet-text">140</output> 
           </div>
         </form>
       </section>

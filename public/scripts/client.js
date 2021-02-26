@@ -8,14 +8,6 @@ $(() => {
 
 
 
-
-$('.tweet').hover (
-  function(){
-  $(this).addClass('.hover').addClass('.lighter-username').addClass('.lighter-username2')
-  $(this).removeClass('.hover').removeClass('.lighter-username2')
-})
-
-
 const $alert1 = $('.alert1');
 $alert1.hide();
 

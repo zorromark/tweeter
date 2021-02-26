@@ -12,6 +12,13 @@
   visibility: visible;
 }
 
+.anchor {
+  display: block;
+  height: 130px;
+  margin-top: -92px;
+  visibility: hidden;
+}
+
 form button {
   background-color: #4056A1;
   color: #FFFFFF;
