@@ -6,8 +6,18 @@
 
 $(() => {
 
-  const $alert1 = $('#alert1')
-  $alert1.hide()
+
+
+
+$('.tweet').hover (
+  function(){
+  $(this).addClass('.hover').addClass('.lighter-username').addClass('.lighter-username2')
+  $(this).removeClass('.hover').removeClass('.lighter-username2')
+})
+
+
+const $alert1 = $('.alert1');
+$alert1.hide();
 
 const loadtweets = () => {
   $.ajax({
@@ -40,13 +50,13 @@ $tweetButton.on('submit', function(event) {
 
   if ($textarea === "" || $textarea === null) {
     
-    $alert1.text('Please do not leave it blank.')
+    $alert1.addClass('showAlert1').text('Empty tweets will not change the world, please type something.')
     $alert1.slideDown('slow')
     
 
     
   } else if ($textLength > 140) {
-    $alert1.text('too long')
+    $alert1.addClass('showAlert1').text('Too much goodness, please shorten your tweet to less than 140 characters.')
     $alert1.slideDown('slow')
    
   
@@ -85,6 +95,9 @@ const escape = function(str) {
 
 
 const createTweetElement = function(tweet) {
+  const date = moment(tweet.created_at).fromNow()
+  const now = moment(Date.now())
+  
   const $tweet = $(`
   <article class="tweet">
     <header>
@@ -98,7 +111,7 @@ const createTweetElement = function(tweet) {
     ${escape(tweet.content.text)}
     </p>
     <footer>
-      <div>${tweet.created_at}</div>
+      <div>${date}</div>
       <div> &#x2691; &#x2665; <i class="fa">&#xf079;</i></div>
     </footer>
   </article>`)

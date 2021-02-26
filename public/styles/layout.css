@@ -30,6 +30,12 @@ body {
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 
+p {
+  display:flex;
+  overflow-wrap: anywhere;
+}
+
+
 .avatar {
   height:3em;
   margin-right: 1em;
@@ -83,10 +89,49 @@ main {
   font-weight: lighter;
 }
 
-.tweets article:hover  {
+/* .tweets article:hover  {
   box-shadow: 10px 10px 5px grey;
 }
 
 .tweets:hover .lighter-username {
   visibility: visible;
+} */
+
+.hover {
+  box-shadow: 10px 10px 5px grey;
+}
+
+.lighter-username2 {
+  visibility: visible;
+  color:slategray
+}
+
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: 100px
+  }
+
+  main {
+    max-width: 1024px;
+    width: 66.7%;
+    float: right;
+    flex-direction: column;
+    margin-top: 90px;
+    margin-right: 3rem;
+  }
+
+
+  .top-header {
+    width: 33.3%;
+    float: inline-start ;
+    margin-right: 5rem;
+    margin-left: 3rem;
+    max-width: 1024px;
+  }
+  
 }

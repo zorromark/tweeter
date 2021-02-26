@@ -1,7 +1,8 @@
 nav {
   height: 120px;
   width: 100vw;
-  background-color: #4056A1;
+  background-color: rgb(175, 34, 194);
+  background-image: url("https://www.transparenttextures.com/patterns/crisp-paper-ruffles.png");
   color: #FFFFFF;
   padding: 1.5em;
   display: flex;
@@ -24,13 +25,11 @@ nav div {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 
 #togglearrow {
   color: red;
-
 }
 
 .write {
@@ -41,3 +40,9 @@ nav div {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (min-width: 1024px) {
+  nav {
+    background-color: #24bfc4;
+ }
+};
