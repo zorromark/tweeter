@@ -14,8 +14,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Getting Started
 
-![""Screenshot of Desktop view page"]()
-!["Screenshot of Mobile view page""]()
+![""Screenshot of Desktop view page"](https://github.com/zorromark/tweeter/blob/master/docs/Tweeter_desktopView.jpg)
+!["Screenshot of Mobile view page""](https://github.com/zorromark/tweeter/blob/master/docs/Tweeter_mobileView.png)
 
 
 ## Dependencies
